@@ -1,0 +1,12 @@
+.my-div{
+    padding: 20px;
+    background-color:bisque;
+    color: black;
+    transition: background-color 0.5s ease-in-out ,color 0.5s ease-in-out ;
+}
+.my-div:hover{
+    background-color: azure;
+    color: white;
+    cursor:pointer;
+}
+

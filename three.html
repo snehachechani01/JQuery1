@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Fade In Fade Out</title>
+    <style>
+      #image-container {
+        position: relative;
+      }
+
+      #image-container img {
+        /* position: absolute; */
+        top: 10;
+        left: 10;
+        width: 50%;
+        height: 10%;
+        opacity: 10;
+      }
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script>
+      $(document).ready(function() {
+        $("#image-container img").on("load", function() {
+          $(this).animate({ opacity: 100 }, 1000); // Fade in the image over 1 second
+        }).attr("src", $("#image-container img").attr("src")); // Load the image
+
+        setInterval(function() {
+          $("#image-container img").animate({ opacity: 100 }, 1000, function() {
+            // Fade out the image over 1 second
+            $(this).attr("src", "new_image.jpg"); // Replace the image source with a new image
+            $(this).animate({ opacity: 1 }, 1000); // Fade in the new image over 1 second
+          });
+        }, 5000); // Change the image every 5 seconds
+      });
+    </script>
+  </head>
+  <body>
+    <div id="image-container">
+      <img src="image.jpg" alt="Example Image" >
+    </div>
+  </body>
+</html>
