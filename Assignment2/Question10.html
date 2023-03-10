@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Remove or delete div on button click using JavaScript jQuery library</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#remove").click(function(){
+         $("#msg").remove();
+     });
+});
+</script>
+<body>
+   <div id="msg">Click on me to Remove</div>
+   <button type="button" id="remove">Remove</button>
+</body>
+</html>

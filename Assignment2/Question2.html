@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copy Text using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#copy-btn').click(function() {
+          var textToCopy = $('#textbox1').val();
+          $('#textbox2').val(textToCopy);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <label for="textbox1">Text Box 1:</label>
+    <textarea id="textbox1"></textarea>
+    <br>
+    <label for="textbox2">Text Box 2:</label>
+    <textarea id="textbox2"></textarea>
+    <br>
+    <button id="copy-btn">Copy Text</button>
+  </body>
+</html>

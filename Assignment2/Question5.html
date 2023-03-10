@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Anchor Tag Href and Open in Private Window Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#changeBtn').click(function() {
+				$('a').attr('href', 'https://www.example.com').attr('target', '_blank').attr('rel', 'noopener noreferrer');
+			});
+		});
+	</script>
+</head>
+<body>
+	<a href="https://www.google.com">Click here to go to Google</a>
+	<br><br>
+	<button id="changeBtn">Change Href and Open in Private Window</button>
+</body>
+</html>

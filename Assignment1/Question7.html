@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+            background-color: aqua;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+            border: 1px solid black;
+        } 
+
+        td, tr{
+            border: 2px solid black;
+        }
+
+        #btn {
+
+            background-color: aqua;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 8px 2px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').click(function () {
+                $('#tbUser tr:even')
+                .css("background-color", "red");
+                $('#tbUser tr:odd')
+                .css("background-color", "pink");
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Product Details</h2>
+
+    <table id="tbUser">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+            <td>Row 3, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, Column 1</td>
+            <td>Row 4, Column 2</td>
+            <td>Row 4, Column 3</td>
+        </tr>
+      
+    </table>
+    <button id="btn">Click</button>
+
+</body>
+
+</html>

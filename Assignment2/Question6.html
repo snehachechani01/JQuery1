@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change P Tag Text Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#changeBtn').click(function() {
+				$('p').text('This text has been changed dynamically.');
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Initial text.</p>
+	<br>
+	<button id="changeBtn">Change Text</button>
+</body>
+</html>

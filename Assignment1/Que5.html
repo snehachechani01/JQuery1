@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Phone Number Validation Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // get the phone number input element
+        var phoneInput = $('#phone');
+
+        // set up a keypress event handler for the input element
+        phoneInput.on('keypress', function(event) {
+          // get the current input value and the pressed key
+          var inputValue = phoneInput.val();
+          var key = event.key;
+
+          // check if the pressed key is a digit
+          if (isNaN(key)) {
+            // if not a digit, prevent the input
+            event.preventDefault();
+          } else {
+            // if a digit, check if the input value is already 10 digits
+            if (inputValue.length === 10) {
+              // if already 10 digits, prevent further input
+              event.preventDefault();
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+  </body>
+</html>

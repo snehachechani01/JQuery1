@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Textbox Validation Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#validateBtn').click(function() {
+				var inputText = $('#textInput').val();
+				if (/^[a-zA-Z0-9]+$/.test(inputText)) {
+					alert('Validation passed!');
+				} else {
+					alert('Validation failed! Please remove any spaces or special characters.');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<label for="textInput">Enter text:</label>
+	<input type="text" id="textInput">
+	<button id="validateBtn">Validate</button>
+</body>
+</html>

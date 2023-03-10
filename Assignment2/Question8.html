@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Link Href Value</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var firstLink = $('a:first').attr('href');
+			console.log(firstLink);
+		});
+	</script>
+</head>
+<body>
+	<a href="https://example.com/">Example Link 1</a>
+	<a href="https://example.com/page2">Example Link 2</a>
+	<a href="https://example.com/page3">Example Link 3</a>
+	<a href="https://example.com/page4">Example Link 4</a>
+</body>
+</html>
