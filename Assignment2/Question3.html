@@ -5,7 +5,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function() {
+        $("button").click(function(){
         $('p:nth-child(3)').remove();
+        })
       });
     </script>
   </head>
@@ -15,5 +17,7 @@
     <p>This is the third paragraph.</p>
     <p>This is the fourth paragraph.</p>
     <p>This is the fifth paragraph.</p>
+
+<button>Hide</button>
   </body>
 </html>

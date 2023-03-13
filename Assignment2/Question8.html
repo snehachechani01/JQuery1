@@ -1,19 +1,56 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>First Link Href Value</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			var firstLink = $('a:first').attr('href');
-			console.log(firstLink);
-		});
-	</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>paragrapg_remover</title>
+</script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    alert($("a:first").attr("href"));
+  });
+});
+</script>
+<style>
+    .change_back{
+        background-color: green
+    }
+	
+  a {
+    color: rgb(159, 76, 162);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgba(223, 206, 89, 0.369);
+    text-decoration: underline;
+  }
+  
+  #new_tab {
+    font-weight: bold;
+  }
+</style>
+
 </head>
+
 <body>
-	<a href="https://example.com/">Example Link 1</a>
-	<a href="https://example.com/page2">Example Link 2</a>
-	<a href="https://example.com/page3">Example Link 3</a>
-	<a href="https://example.com/page4">Example Link 4</a>
+    <div class="main">
+    <a style="width: 180px;" id ='new_tab' href="https://www.sigmainfo.net/">Sigma</a><br>
+   <a style="width: 180px;" id ='new_tab' href="https://www.google.com/">Google</a><br>
+   <a style="width: 180px;" id ='new_tab' href="https://www.google.com/gmail/about/">Gmail</a><br>
+   <a style="width: 180px;" id ='new_tab' href="https://www.sigmainfo.net/blog/">Blogs</a><br>
+   <br>
+</div>
+   <!-- <input style="width: 100px;" type="button" id="b1" value="click"> -->
+   
 </body>
+
+</html>
+
 </html>
