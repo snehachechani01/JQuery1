@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam laborum nemo, nisi provident, ut iusto sit est rerum cupiditate nobis numquam placeat ex debitis ipsam, nesciunt sed. Laboriosam quisquam quibusdam ea, tempora aliquam mollitia amet labore non impedit harum veniam ratione expedita error facere nam deserunt quaerat fugit cum consequatur?
+        </p>
+    </div>
+    <br>
+
+    <script>
+        $(document).ready(function () {
+            $(".div1").hover(function () {
+                $(this).css({ "background-color": "pink", "color": "white" });
+            }, function () {
+                $(this).css({ "background-color": "yellow", "color": "black" });
+            });
+        });
+    </script>
+</body>
+
+</html>
